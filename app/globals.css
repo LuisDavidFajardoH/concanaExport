@@ -1,0 +1,92 @@
+/* ===========================
+   CSS VARIABLES – DESIGN SYSTEM
+   =========================== */
+:root {
+  --surface-primary:   #F5F2E9;
+  --surface-alt:       #EDE9E0;
+  --surface-inverse:   #2D2926;
+  --surface-hero:      #1C1916;
+  --surface-card:      #231F1C;
+  --fg-primary:        #2D2926;
+  --fg-secondary:      #5E5954;
+  --fg-muted:          #9E9790;
+  --fg-inverse:        #F5F2E9;
+  --fg-inverse-muted:  #9E9790;
+  --border-subtle:     #DCD8CB;
+  --border-dark:       #3D3632;
+  --accent:            #7D6B3D;
+
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-body:    'Inter', system-ui, sans-serif;
+
+  --max-width: 1440px;
+  --inner-width: 1248px;
+  --transition: 0.2s ease;
+}
+
+/* ===========================
+   RESET & BASE
+   =========================== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--surface-primary);
+  color: var(--fg-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+/* ===========================
+   SCROLL REVEAL UTILITY
+   =========================== */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===========================
+   RESPONSIVE BREAKPOINTS
+   =========================== */
+@media (max-width: 768px) {
+  :root {
+    --section-padding: 64px 20px;
+  }
+}

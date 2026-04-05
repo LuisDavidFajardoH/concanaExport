@@ -1,0 +1,116 @@
+.section {
+  display: flex;
+  min-height: 580px;
+  background: var(--surface-inverse);
+}
+
+.leftCol {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+  padding: 80px 80px 80px 96px;
+}
+
+.tag {
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  color: var(--accent);
+}
+
+.headline {
+  font-family: var(--font-heading);
+  font-size: clamp(30px, 3.2vw, 44px);
+  font-weight: 400;
+  line-height: 1.12;
+  color: var(--fg-inverse);
+}
+
+.body {
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--fg-inverse-muted);
+  max-width: 480px;
+}
+
+.formatList {
+  display: flex;
+  flex-direction: column;
+}
+
+.formatRow {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  height: 52px;
+  border-bottom: 1px solid #3D3632;
+}
+.formatRow:last-child { border-bottom: none; }
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  flex-shrink: 0;
+}
+
+.formatText {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--border-subtle);
+}
+
+/* Right column */
+.rightCol {
+  width: 480px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 96px 80px 48px;
+  gap: 20px;
+}
+
+.certTitle {
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  color: var(--fg-secondary);
+}
+
+.certGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2px;
+}
+
+.certCard {
+  background: #231F1C;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.certName {
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--border-subtle);
+  text-align: center;
+  white-space: pre-line;
+  line-height: 1.5;
+}
+
+@media (max-width: 1024px) {
+  .section { flex-direction: column; }
+  .rightCol { width: 100%; padding: 48px 24px; }
+  .leftCol { padding: 64px 24px; }
+}

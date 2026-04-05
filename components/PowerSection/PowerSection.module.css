@@ -1,0 +1,77 @@
+.section {
+  display: flex;
+  min-height: 620px;
+  background: var(--surface-primary);
+}
+
+.textCol {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+  padding: 80px 96px;
+}
+
+.tag {
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  color: var(--accent);
+}
+
+.tagLine {
+  width: 32px;
+  height: 1px;
+  background: var(--accent);
+  margin-top: -12px;
+}
+
+.headline {
+  font-family: var(--font-heading);
+  font-size: clamp(32px, 3.5vw, 46px);
+  font-weight: 400;
+  line-height: 1.12;
+  color: var(--fg-primary);
+}
+
+.body {
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--fg-secondary);
+  max-width: 460px;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.badge {
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: var(--fg-secondary);
+  padding: 7px 14px;
+  border: 1px solid var(--border-subtle);
+}
+
+.imageCol {
+  position: relative;
+  width: 600px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 1024px) {
+  .section { flex-direction: column; }
+  .imageCol {
+    width: 100%;
+    height: 360px;
+    flex-shrink: unset;
+  }
+  .textCol { padding: 64px 24px; }
+}
