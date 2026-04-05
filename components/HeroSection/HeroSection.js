@@ -4,10 +4,10 @@ import styles from './HeroSection.module.css';
 
 const metrics = [
   { value: '6', label: 'SABORES' },
-  { value: '25 kg', label: 'FORMATO ESTÁNDAR' },
-  { value: '500 t', label: 'CAPACIDAD / MES' },
-  { value: '20+', label: 'DESTINOS' },
-  { value: '100%', label: 'NATURAL · SIN REFINAR' },
+  { value: 'Nac.', label: 'DIST. NACIONAL' },
+  { value: '25 kg', label: 'FORMATO EXPORT' },
+  { value: '20+', label: 'PAÍSES DESTINO' },
+  { value: '100%', label: 'NATURAL · SANTANDER' },
 ];
 
 export default function HeroSection() {
@@ -34,12 +34,12 @@ export default function HeroSection() {
             DISTRIBUCIÓN NACIONAL &amp; EXPORTACIÓN
           </p>
           <h1 className={styles.title}>
-            Panela de Santander.<br />Para vending, industria<br />y distribución nacional.
+            Panela de Santander<br />para todo Colombia<br />y el mundo.
           </h1>
           <p className={styles.subtitle}>
-            Panela 100% natural en polvo, producida en Santander.
-            Lista para operar en máquinas vending, líneas de producción y redes de distribución
-            en todo el territorio colombiano y en más de 20 países.
+            Panela 100% natural en polvo. Del trapiche santandereano
+            a distribuidores, vending y canales industriales en todo el territorio nacional,
+            con capacidad de exportación a más de 20 países.
           </p>
           <div className={styles.divider} />
           <div className={styles.actions}>

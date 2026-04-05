@@ -27,8 +27,8 @@ export default function Footer() {
           </div>
           <div className={styles.col}>
             <p className={styles.colTitle}>CONTACTO</p>
-            <a href="mailto:ventas@concanaexport.com" className={styles.link}>ventas@concanaexport.com</a>
-            <a href="tel:+5712345678" className={styles.link}>+57 (1) 234 5678</a>
+            <a href="mailto:concancaexport@gmail.com" className={styles.link}>concancaexport@gmail.com</a>
+            <a href="tel:+573002001795" className={styles.link}>300 200 1795</a>
             <a href="https://linkedin.com/company/concana-export" target="_blank" rel="noopener noreferrer" className={styles.link}>LinkedIn</a>
           </div>
         </div>

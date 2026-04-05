@@ -2,21 +2,21 @@ import styles from './TestimonialsSection.module.css';
 
 const testimonials = [
   {
-    quote: '«Llevábamos años con obstrucciones en los dosificadores. Con la panela de Concana desaparecieron. El 94% menos de incidencias técnicas en los primeros tres meses.»',
-    name: 'Marco R.',
-    company: 'VendingPro · Italia',
+    quote: '«Llevábamos años buscando una panela en polvo que fluyera bien en los dosificadores. Con Concana cero obstrucciones — y el origen santandereano le da un diferencial real frente a los azúcares industriales.»',
+    name: 'Andrés M.',
+    company: 'VendingColombia · Bogotá',
     dark: false,
   },
   {
-    quote: '«El ticket medio subió un 22% en los tres primeros meses. Los usuarios prefieren pagar más por un producto que reconocen como natural. El packaging habla solo.»',
-    name: 'Sophie M.',
-    company: 'NaturVend · Francia',
+    quote: '«La distribuimos en toda nuestra red de tiendas naturistas en el Eje Cafetero. El consumidor colombiano ya conoce la panela de Santander y la exige. Las ventas aumentaron 28% el primer trimestre.»',
+    name: 'Claudia R.',
+    company: 'Red NaturShop · Eje Cafetero',
     dark: true,
   },
   {
-    quote: '«Pasó a ser el producto más vendido de toda nuestra red de Madrid en menos de un mes. Ahora los clientes lo piden por nombre.»',
-    name: 'Carlos F.',
-    company: 'MadridVending SL · España',
+    quote: '«Pasó a ser el ingrediente principal de nuestra línea de bebidas calientes. La trazabilidad desde el trapiche y los certificados nos abren puertas en cadenas de retail que antes eran imposibles.»',
+    name: 'Felipe O.',
+    company: 'Café & Bienestar · Medellín',
     dark: false,
   },
 ];
@@ -25,9 +25,9 @@ export default function TestimonialsSection() {
   return (
     <section id="testimonios" className={styles.section}>
       <div className={styles.header}>
-        <p className={styles.tag}>RESULTADOS VERIFICADOS</p>
+        <p className={styles.tag}>CLIENTES EN COLOMBIA Y EL EXTERIOR</p>
         <h2 className={styles.headline}>
-          Lo que dicen los operadores<br />que ya trabajan con nosotros
+          Lo que dicen quienes<br />ya trabajan con nosotros
         </h2>
       </div>
 
